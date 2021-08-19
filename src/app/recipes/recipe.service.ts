@@ -24,6 +24,11 @@ export default class RecipeService {
     //return the new array / a copy
     return this.recipes.slice();
   }
+  getRecipe(index: number) {
+    // whats deep copy
+    // slice return a cope of an array
+    return this.recipes.slice()[index];
+  }
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.slService.addIngredients(ingredients);
   }
